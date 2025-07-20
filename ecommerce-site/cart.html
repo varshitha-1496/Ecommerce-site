@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cart - E-Shop</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header class="header products-navbar">
+    <div class="navbar">
+      <div class="logo">🛒 E-Shop</div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">🏠 Home</a></li>
+          <li><a href="products.html">🛍️ Products</a></li>
+          <li><a href="cart.html">🛒 Cart (<span id="cart-count">0</span>)</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Cart Content -->
+  <div class="cart-page">
+    <h2>Your Shopping Cart</h2>
+    <div id="cart-items"></div>
+    <div class="cart-total" id="cart-total">Total: ₹0</div>
+    <div style="text-align: right; margin-top: 1rem;">
+      <button class="remove-btn" onclick="emptyCart()">🧹 Empty Cart</button>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>© 2025 E-Shop. Built by Varshitha with ❤️</p>
+  </footer>
+
+  <!-- Script -->
+  <script src="js/cart.js"></script>
+</body>
+</html>
